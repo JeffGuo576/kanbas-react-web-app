@@ -1,0 +1,121 @@
+
+
+ul.wd-kanbas-navigation.list-group{
+    border-radius: 0px;
+    width: 83px;
+}
+
+ul.wd-kanbas-navigation .list-group-item{
+    border: none;
+    background-color: black;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+ul.wd-kanbas-navigation a{ 
+    color: white;
+    text-decoration: none;
+}
+
+
+ul.wd-kanbas-navigation .list-group-item.active{ 
+    color:red;
+    background-color:white;
+    border: none;
+    border-left: 2px solid black;
+}
+
+ul.wd-kanbas-navigation .list-group-item.active a { 
+    color:black;
+}
+
+.logo {
+width:75px;
+height:75px;   
+}
+
+ul.wd-profile-navigation.list-group{
+    border-radius: 0px;  
+    padding-left: 0px;
+}
+
+ul.wd-profile-navigation .list-group-item{
+    border: none;
+    text-align: left;
+}
+
+ul.wd-profile-navigation a{ 
+    color: red;
+    text-decoration: none;
+}
+
+ul.wd-profile-navigation .list-group-item.active{ 
+    color:black;
+    background-color:white;
+    border: none;
+    border-left: 2px solid black;
+}
+
+ul.wd-profile-navigation .list-group-item.active a { 
+    color:black;
+    text-align: left;
+    
+}
+
+.redlink{
+    color:red;
+    text-decoration: none;
+}
+
+.profile-button{
+    float:right;
+    border:none;
+    background-color: darkgrey;
+}
+
+.hamburger-button{
+    float:left;
+    background-color: transparent;
+    border: none;
+    padding-right: 20px;
+}
+
+.container{
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+.form-control{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: white;
+    background-clip: padding-box;
+    border: 1px solid black;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.links.container {
+    padding: 0;
+}
+
+
+
+.kanbas.container{
+    padding: 0;
+    background-color: black;
+    width: 83px;
+    height: 100%;
+}

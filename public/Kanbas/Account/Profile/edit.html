@@ -1,86 +1,175 @@
-<table>
-    <tr>
-        <td valign="top">
-            <ul>
-                <li>
-                    <a href="#" >Northeastern</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Account/Profile" >Account</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home" >Courses</a>
-                </li>
-                <li>
-                    <a href="#" >Calendar</a>
-                </li>
-                <li>
-                    <a href="#" >Inbox</a>
-                </li>
-                <li>
-                    <a href="#" >History</a>
-                </li>
-                <li>
-                    <a href="#" >Studio</a>
-                </li>
-                <li>
-                    <a href="#" >Commons</a>
-                </li>
-                <li>
-                    <a href="#" >Help</a>
-                </li>
-            </ul>
-        </td>
-        <td valign="top">
-            <ul>
-                <li><a href="#">Notifcations</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Files</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">ePortfolios</a></li>
-                <li><a href="#">Shared Content</a></li>
-                <li><a href="#">The Hub</a></li>
-                <li><a href="#">Qwickly Course Tools</a></li>
-                <li><a href="#">Global Announcements</a></li>
-            </ul>
-        </td>
-        <td>
-            <h2>Jeffrey Guo</h2>
-            <form action="/Kanbas/Account/Profile/"> 
-            <label for="name"> Name </label>
-            <input id="name" type="text">
-            <label for="pronouns"> Pronouns</label>
-            <select id="pronouns">
-                <option>None</option>
-                <option>he/him</option>
-                <option>she/her</option>
-                <option>they/them</option>
-            </select>
-            <br/>
-            <br/>
-            <label for="title">Title</label>
-            <input id="title" type="text">
-            
-            <h3>Contact</h3>
-            <p>No registered services, you can add some on the <a href="#">settings</a> page</p>
-            <label for="bio"> <h3>Biography</h3></label>
-            <textarea id="bio" col="50" rows="10">
-                Student
-            </textarea>
-            <h3>Links</h3>
-            <a href="https://www.youtube.com">Youtube</a>
-            <br/>
-            <br/>
-            <button type="button">Add another link</button>
-            <br/>
-            <button>Cancel</button>
-            <button>Save Profile</button>
-            <br/>
-            <button>Edit Profile</button>
-            <button>Cancel Editing</button>
-            </form>
-        </td>
-    </tr>
-</table>
+<html>
+<head>
+    <link href= "/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+    <link href ="index.css" rel = "stylesheet"/>
+</head>
+<body>
+    <div class ="row">
+        <div class="d-none d-md-block col-2 col-lg-2 col-xl-2" style="width:83px;">
+            <div class="kanbas container">
+                <ul class = "wd-kanbas-navigation list-group">
+                    <li class = "list-group-item">
+                        <a href="#" > <img src="/images/Northeasternlogo.png" class="logo"></a>
+                    </li>
+                    <li class = "list-group-item active">
+                        <a href="/Kanbas/Account/Profile/" >
+                            <i class="fa-solid fa-user" style="color: grey" ></i>
+                            <br/>
+                            Account</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="/Kanbas/Dashboard/" >
+                            <i class="fa-solid fa-gauge" style="color:red"></i>
+                            <br/>
+                            Dashboard</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="/Kanbas/Courses/Home"><i class="fa-solid fa-book" style="color: red"></i>
+                            <br/>
+                            Courses</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="#" ><i class="fa-regular fa-calendar-days" style="color:red"></i>
+                            <br/>
+                            Calendar</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="#" ><i class="fa-solid fa-inbox" style="color:red"></i>
+                            <br/>
+                            Inbox</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="#" ><i class="fa-regular fa-clock" style="color:red"></i>
+                            <br/>
+                            History</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="#" ><i class="fa-solid fa-chalkboard" style="color:red"></i>
+                            <br/>
+                            Studio</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="#" ><i class="fa-solid fa-right-from-bracket" style ="color:red"></i>
+                            <br/>
+                            Commons</a>
+                    </li>
+                    <li class = "list-group-item">
+                        <a href="#" ><i class="fa-regular fa-circle-question" style="color:red"></i>
+                            <br/>
+                            Help</a>
+                    </li>
+                </ul>   
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10" style= "padding-left: 20px;">
+            <div class="container">
+            <button class="hamburger-button"><i class="fa-solid fa-bars fa-2x" style="color:red"></i></button>
+            Jeffrey Guo's Profile
+            <br>
+            <br>
+            <hr>
+            </div>
+            <div class="row">
+                <div class="d-none d-md-block col-2 col-lg-2 col-xl-2 col-xxl-2" style="padding-left: 25px;">
+                    <ul class="wd-profile-navigation list-group">
+                        <li class="list-group-item" >
+                            <a href="#">Notifications</a>
+                        </li>
+                        <li class="list-group-item active">
+                            <a href="#">Profile</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Files</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Settings</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">ePortfolios</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Shared Content</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">The Hub</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Qwickly Course Tools</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#">Global Announcements</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10" style="padding-left: 100px;">
+                    <i class="fa-solid fa-user fa-6x" style="color: grey" ></i>
+                    <a href="/Kanbas/Account/Profile/index.html">
+                    <button class="profile-button"><i class="fa-solid fa-pencil fa-flip-horizontal"></i>
+                        Cancel Editing</button>
+                    </a>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <label for="name" class="form-label" style="font-weight: bold;">Name *</label>
+                                <input type="text" class="form-control" id="name" value="Jeffrey Guo">
+                              </div>
+                              <div class="mb-3">
+                                <label for="pronouns" class="form-label" style="font-weight: bold;"> Pronouns</label>
+                                <br/>
+                                <select id="pronouns">
+                                    <option>None</option>
+                                    <option>he/him</option>
+                                    <option>she/her</option>
+                                    <option>they/them</option>
+                                </select>
+                                <br/>
+                                <br/>
+                                <label for="title" class="form-label" style="font-weight: bold;">Title *</label>
+                                <input type="text" class="form-control" id="title">
+                              </div>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>No registered services, you can add some on the <a href="#" class="redlink">settings</a> page</p>
+                        <br/>
+                        <br/>
+                    </div>
+                      <div class="mb-3">
+                        <label for="bio" class="form-label"><h3>Biography</h3></label>
+                        <textarea class="form-control" id="bio" rows="3"> Student</textarea>
+                    <br/>
+                    <h3>Links</h3>
+                      </div>
+                        <div class="links container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="link-title" class="form-label" style="font-weight: bold;">Title</label>
+                                    <input type="text" class="form-control" id="link-title" value="Youtube">
+                                    <br/>
+                                    <button class="btn btn-gray">Add another link</button><br/>
+                                </div>
+                                <div class="col-md-1">
+                                    <p style="margin-top: 35px;">&#8594;</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="link-title" class="form-label" style="font-weight: bold;">URL</label>
+                                    <input type="text" class="form-control" id="link-title" value="www.youtube.com">
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <a href="/Kanbas/Account/Profile/index.html" style="text-decoration: none;">
+                        <button class="btn btn-gray">Cancel</button>
+                        </a>
+                        <a href="/Kanbas/Account/Profile/index.html" style="text-decoration: none;">
+                        <button class="btn btn-danger">Save Profile</button>
+                        </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
 
 

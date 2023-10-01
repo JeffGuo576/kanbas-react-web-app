@@ -1,0 +1,26 @@
+ul.wd-courses-navigation.list-group{
+    border-radius: 0px;
+}
+
+ul.wd-courses-navigation .list-group-item{
+    border: none;
+}
+
+ul.wd-courses-navigation a{ 
+    color: red;
+    text-decoration: none;
+}
+
+ul.wd-courses-navigation .list-group-item.active{ 
+    color:black;
+    background-color:white;
+    border: none;
+    border-left: 2px solid black;
+}
+
+ul.wd-courses-navigation .list-group-item.active a { 
+    color:black;
+    
+}
+
+

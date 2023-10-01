@@ -1,0 +1,82 @@
+.wd-kanbas-navigation.list-group{
+    border-radius: 0px;
+    width: 83px;
+    height: 100%;
+}
+
+.wd-kanbas-navigation .list-group-item{
+    border: none;
+    background-color: black;
+    text-align: center;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-kanbas-navigation a{ 
+    color: white;
+    text-decoration: none;
+}
+
+
+.wd-kanbas-navigation .list-group-item.active{ 
+    color:red;
+    background-color:white;
+    border: none;
+    border-left: 2px solid black;
+}
+
+.wd-kanbas-navigation .list-group-item.active a { 
+    color:black;
+}
+
+.logo {
+width:75px;
+height:75px;   
+}
+
+.redlink{
+    color:red;
+    text-decoration: none;
+}
+
+.profile-button{
+    float:right;
+    border:none;
+    background-color: darkgrey;
+}
+
+.hamburger-button{
+    float:left;
+    background-color: transparent;
+    border: none;
+    padding-right: 20px;
+}
+
+.container{
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+
+.kanbas.container{
+    padding: 0;
+    background-color: black;
+    width: 83px;
+    height: 2250px;
+}
+
+.card-title h5{
+    font-size:1px;
+    padding-left: 10px;
+}
+
+.card-padding{
+    padding: 5px;
+}
+
+.course{
+    border: none;
+    background-color: white;
+}
