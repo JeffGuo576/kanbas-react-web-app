@@ -1,207 +1,268 @@
-<table>
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
-                <li>
-                    <a href="#" >Northeastern</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Account/Profile/" >Account</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Home" >Courses</a>
-                </li>
-                <li>
-                    <a href="#" >Calendar</a>
-                </li>
-                <li>
-                    <a href="#" >Inbox</a>
-                </li>
-                <li>
-                    <a href="#" >History</a>
-                </li>
-                <li>
-                    <a href="#" >Studio</a>
-                </li>
-                <li>
-                    <a href="#" >Commons</a>
-                </li>
-                <li>
-                    <a href="#" >Help</a>
-                </li>
-            </ul>
-        </td>
-            <td valign="top">
-                <ul>
-                <li>
-                    <a href="/Kanbas/Courses/Home" >Home</a>
-                </li>
-                <li>
-                    <a href="#" >Modules</a>
-                </li>
-                <li>
-                    <a href="#" >Zoom Meetings</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Assignments" >Assignments</a>
-                </li>
-                <li>
-                    <a href="#" >Quizzes</a>
-                </li>
-                <li>
-                    <a href="/Kanbas/Courses/Grades" >Grades</a>
-                </li>
-                <li>
-                    <a href="#" >People</a>
-                </li>
-                <li>
-                    <a href="#" >Panopto Video</a>
-                </li>
-                <li>
-                    <a href="#" >Discussions</a>
-                </li>
-                <li>
-                    <a href="#" >Announcements</a>
-                </li>
-                <li>
-                    <a href="#" >Pages</a>
-                </li>
-                <li>
-                    <a href="#" >Files</a>
-                </li>
-                <li>
-                    <a href="#" >Rubrics</a>
-                </li>
-                <li>
-                    <a href="#" >Outcomes</a>
-                </li>
-                <li>
-                    <a href="#" >Collaborations</a>
-                </li>
-                <li>
-                    <a href="#" >Syllabus</a>
-                </li>
-                <li>
-                    <a href="#" >Settings</a>
-                </li>
-            </ul>
-        </td>
-        <td>
-<select>
-    <option>SpeedGrader</option>
-</select>
-<h3>Assignment Name</h3>
-<form action="/Kanbas/Courses/Assignments/">
-<input type="text"/>
-<br/>
-<br/>
-<textarea cols="30" rows="10" placeholder="This is the assignment description">
-</textarea>
-<br/>
-<br/>
-<label for="points"> Points</label>
-<br/>
-<input type="number" id="points" max="100" min="50" value="100"/>
-<br/>
-<br/>
-<label for="assignmentgroup">Assignment Group</label>
-<br/>
-<select id="assignmentgroup">
-    <option>ASSIGNMENTS</option>
-</select>
-<br/>
-<br/>
-<label for="displaygrade">Display Grade as</label>
-<br/>
-<select id="displaygrade">
-    <option>Percentage</option>
-</select>
-<br/>
-<br/>
-<label for="submissionType">Submission Type</label>
-<br/>
-<select id="submissionType">
-    <option>Online</option>
-</select>
-<br/>
-<br/>
-<label>Online Entry Options</label>
-<br/>
-<input type="checkbox" value="textentry"
-      name="check-entry" id="checkbox-textentry" checked/>
-<label for="checkbox-textentry">Text Entry</label>    <br/>
-<input type="checkbox" value="websiteurl"
-      name="check-entry" id="checkbox-websiteurl"/>
-<label for="checkbox-websiteurl">Website Url</label>    <br/>
-<input type="checkbox" value="websiteurl"
-      name="check-entry" id="checkbox-media"/>
-<label for="checkbox-media">Media Recording</label>    <br/>
-<input type="checkbox" value="studentanno"
-      name="check-entry" id="checkbox-studentanno"/>
-<label for="checkbox-studentanno">Student Annotations</label>    <br/>
-<input type="checkbox" value="fileupl"
-      name="check-entry" id="checkbox-fileupl"/>
-<label for="checkbox-fileupl">File Uploads</label>    <br/>
-<br/>
-<br/>
-<label for="submissionAttempt">Submission Attempts</label>
-<br/>
-<select id="submissionAttempt">
-    <option>Unlimited</option>
-</select>
-<br/>
-<br/>
-<label for="plagerismReview">Plagerism Review</label>
-<br/>
-<select id="plagerismReview">
-    <option>None</option>
-</select>
-<br/>
-<br/>
-<label for="checkbox-peer">Peer Review</label>
-<br/>
-<input type="checkbox" value="check-peer"
-      name="check-peer" id="checkbox-peer"/>
-<label for="checkbox-peer">Require Peer Reviews</label>   
-<br/>
-<br/>
-<label for="assignTo">Assign</label>
-<br/>
-<label for="assignTo">Assign To</label>
-<br/>   
-<input id="assignTo" input="text"/>
-<br/>
-<br/>
-<label for="due-date"> Due </label>
-<br>
- <input type="date"
-       id="due-date"
-       value="2021-01-01"/>
-</input>
-<br/>
-<br/>
-<label for="avaliable"> Avaliable from </label>
-<br>
- <input type="date"
-       id="avaliable"
-       value="2021-01-01"/>
-</input>
-<br/>
-
-<br/>
-<label for="until"> Until </label>
-<br>
- <input type="date"
-       id="until"
-       value="2021-01-01"/>
-</input>
-<br/>
-<button> Cancel </button>
-<button> Save </button>
-</form>
-        </td>
-        </tr>
-    </tbody>
-</table>
-
+<html>
+    <head>
+        <link href= "/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <link href ="index.css" rel = "stylesheet"/>
+    </head>
+    <body>
+        <table width="100%" height="100%">
+            <tbody>
+                <tr>
+                    <td class="wd-side-bar d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" valign="top" style="background-color: black; width:83px;">
+                        <ul class = "wd-kanbas-navigation list-group" >
+                            <li class = "list-group-item">
+                                <a href="#" > <img src="/images/Northeasternlogo.png" class="logo"></a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="/Kanbas/Account/Profile/" >
+                                    <i class="fa-solid fa-user" style="color: grey" ></i>
+                                    <br/>
+                                    Account</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="/Kanbas/Dashboard/" >
+                                    <i class="fa-solid fa-gauge" style="color:red"></i>
+                                    <br/>
+                                    Dashboard</a>
+                            </li>
+                            <li class = "list-group-item active">
+                                <a href="/Kanbas/Courses/Home"><i class="fa-solid fa-book" style="color: red"></i>
+                                    <br/>
+                                    Courses</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#" ><i class="fa-regular fa-calendar-days" style="color:red"></i>
+                                    <br/>
+                                    Calendar</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#" ><i class="fa-solid fa-inbox" style="color:red"></i>
+                                    <br/>
+                                    Inbox</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#" ><i class="fa-regular fa-clock" style="color:red"></i>
+                                    <br/>
+                                    History</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#" ><i class="fa-solid fa-chalkboard" style="color:red"></i>
+                                    <br/>
+                                    Studio</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#" ><i class="fa-solid fa-right-from-bracket" style ="color:red"></i>
+                                    <br/>
+                                    Commons</a>
+                            </li>
+                            <li class = "list-group-item">
+                                <a href="#" ><i class="fa-regular fa-circle-question" style="color:red"></i>
+                                    <br/>
+                                    Help</a>
+                            </li>
+                        </ul>  
+                    </td>
+                    <td valign="top">
+                        <table width="100%">
+                            <tbody>
+                                <tr>
+                                    <td class="d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell" colspan="3" style="padding-left: 20px;">
+                                        <nav aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class = "breadcrumb-item active" style= "font-size: 25;" aria-current="page"> 
+                                                    <i class="fa-solid fa-bars" style="color:red"></i>
+                                                    <a style="color: red; font-size: 25;"> &#160; &#160; &#160; CS4550.12631.202410</a> > Assignments
+                                                </li>
+                                            </ol>
+                                        </nav>
+                                        <hr> 
+                                    </td>
+                                    <td class="md-dropdown d-md-table-cell d-xl-none d-lg-none" style="width:100%">
+                                        <div class="d-flex justify-content-between" style="background-color: black;"> 
+                                            
+                                            <a class="btn btn-black d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 45px; color:white;">
+                                                <i class="fa-solid fa-bars" style="color: #ee3a3a;"></i>
+                                            </a>
+                                            <ul class="kanbas dropdown-menu" style="width: 100%;">
+                                                <li class = "dropdown-item active">
+                                                   <button style="border:none; background-color: white;"><i class="fa-solid fa-x"></i></button>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="/Kanbas/Dashboard/" >
+                                                        <i class="fa-solid fa-gauge" style="color:red"></i>
+                                                        Dashboard</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="/Kanbas/Courses/Home"><i class="fa-solid fa-book" style="color: red"></i>
+                                                        Courses</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="#" ><i class="fa-regular fa-calendar-days" style="color:red"></i>
+                                                        Calendar</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="#" ><i class="fa-solid fa-inbox" style="color:red"></i>
+                                                        Inbox</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="#"><i class="fa-regular fa-clock" style="color:red"></i>
+                                                        History</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="#" ><i class="fa-solid fa-chalkboard" style="color:red"></i>
+                                                        Studio</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="#" ><i class="fa-solid fa-right-from-bracket" style ="color:red"></i>
+                                                        Commons</a>
+                                                </li>
+                                                <li class = "dropdown-item">
+                                                    <a href="#" ><i class="fa-regular fa-circle-question" style="color:red"></i>
+                                                        Help</a>
+                                                </li>
+                                            </ul>
+                                            <div class="breadcrumbforkanbas" style="color:white;">
+                                                CS4550.12631.202410 <br/>
+                                                Home
+                                            </div>
+                                            <a class="btn btn-black d-flex justify-content-between align-items-center" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="width: 45px; color:white;">
+                                                <i class="fa-solid fa-angle-down" style="color: #ffffff;"></i>
+                                            </a>
+                                            <ul class="course dropdown-menu" style="width: 100%;">
+                                                <li class = "dropdown-item active">
+                                                    <button style="border:none; background-color: white;"><i class="fa-solid fa-x"></i></button>
+                                                 </li>
+                                                <li class="dropdown-item">
+                                                    <a href="/Kanbas/Courses/Home" >
+                                                        <i class="fa-solid fa-house"></i>Home</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-arrows-spin"></i>Modules</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-plug"></i>Piazza</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" >
+                                                        <i class="fa-solid fa-plug"></i>Zoom Meetings</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="/Kanbas/Courses/Assignments">
+                                                        <i class="fa-regular fa-newspaper"></i>Assignments</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" ><i class="fa-solid fa-rocket"></i>Quizzes</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="/Kanbas/Courses/Grades"><i class="fa-solid fa-book"></i>Grades</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-solid fa-users"></i>People</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" ><i class="fa-solid fa-plug"></i>Panopto Video</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-regular fa-comments"></i>Discussions</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-solid fa-bullhorn"></i>Announcements</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-regular fa-file"></i>Pages</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-regular fa-folder"></i>Files</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-regular fa-file-lines"></i>Rubrics</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#" ><i class="fa-regular fa-circle"></i>Outcomes</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-regular fa-file-lines"></i>Collaborations</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-solid fa-plug"></i>Syllabus</a>
+                                                </li>
+                                                <li class="dropdown-item">
+                                                    <a href="#"><i class="fa-solid fa-gear"></i>Settings</a>   
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" valign="top" style="padding-left: 20px;">
+                                        <ul class="wd-course-navigation list-group">
+                                            <li class="list-group-item">
+                                                <a href="/Kanbas/Courses/Home" >Home</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Modules</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Piazza</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Zoom Meetings</a>
+                                            </li>
+                                            <li class="list-group-item active">
+                                                <a href="/Kanbas/Courses/Assignments" >Assignments</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Quizzes</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="/Kanbas/Courses/Grades" >Grades</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >People</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Panopto Video</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Discussions</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Announcements</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Pages</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Files</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Rubrics</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Outcomes</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Collaborations</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Syllabus</a>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <a href="#" >Settings</a>   
+                                            </li>
+                                        </ul>
+                                    </td>
+                                    <td style="padding-left: 30px; padding-right: 30px;" valign="top" width="100%">
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+            </tbody>
+        </table>
+    </body>
+</html>
