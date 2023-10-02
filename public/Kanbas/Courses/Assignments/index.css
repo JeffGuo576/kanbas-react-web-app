@@ -207,3 +207,9 @@ ul.course .dropdown-item.active{
     font-weight: regular; 
     font-size: 10px;
 }
+
+.btn-secondary {
+    color: black;
+    background-color: white;
+    border-color: #6c757d;
+}
