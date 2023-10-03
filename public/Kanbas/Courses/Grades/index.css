@@ -198,3 +198,7 @@ ul.course .dropdown-item.active{
     text-align: right;
 }
 
+.responsive-table {
+    max-width: 50%;
+    overflow-x: auto;
+}

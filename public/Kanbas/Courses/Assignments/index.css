@@ -213,3 +213,8 @@ ul.course .dropdown-item.active{
     background-color: white;
     border-color: #6c757d;
 }
+
+.submission.form-control{
+    width:400px;
+    padding-bottom: 0;
+}

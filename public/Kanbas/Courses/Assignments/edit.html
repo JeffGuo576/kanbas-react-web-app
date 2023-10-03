@@ -265,7 +265,7 @@
                                             <label for="assignment" class="form-label" style="font-weight: bold;">Assignment Name</label>
                                             <input type="text" class="form-control" id="assignment" value="A1 - ENV + HTML">
                                             <br/>
-                                            <textarea class="form-control" id="title" >This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester.</textarea>
+                                            <textarea class="form-control" id="title"  style="height: 100px;">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester.</textarea>
                                         </div>
                                         <div class="d-flex justify-content-center align-items-center">
                                             <div class="col- px-3">
@@ -275,7 +275,7 @@
                                                 <input type="number" min="0" max="100" class="form-control" id="name" value="100">
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center" style="margin-right:170px">
                                             <div class="col- px-3" style="margin-top: 30px;">
                                                 Assignment Group
                                             </div>
@@ -292,7 +292,7 @@
                                                   </div>
                                             </div>
                                         </div>
-                                        <div class="d-flex justify-content-center align-items-center">
+                                        <div class="d-flex justify-content-center align-items-center" style="margin-right:145px">
                                             <div class="col- px-3" style="margin-top: 30px;">
                                                 Display Grade as
                                             </div>
@@ -307,59 +307,96 @@
                                                   </div>
                                             </div>
                                         </div>
-
-
-                                        <div class="mb-3">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Do not count this assignment towards the final grade
-                                                </label>
-                                              </div>
+                                        <div class="d-flex justify-content-center align-items-center" style="margin-left:55px">
+                                            <div class="col- w-50" style="margin-top: 30px;">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                    <label class="form-check-label" for="flexCheckDefault">
+                                                        Do not count this assignment towards the final grade
+                                                    </label>
+                                                  </div>
+                                            </div>
                                         </div>
-                                        <label for="submission form-control">Submission</label>
-                                        <div class="submission form-control" style="width: 400px">
-                                            <div class="assignment dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                  Online
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                  <li><a class="dropdown-item" href="#">Text Input</a></li>
-                                                  <li><a class="dropdown-item" href="#">File Upload</a></li>
-                                                  <li><a class="dropdown-item" href="#">Link</a></li>
-                                                </ul>
-                                              </div>
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                  Text Entry
-                                                </label>
-                                              </div>
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                  Website URL
-                                                </label>
-                                              </div>
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                                <label class="form-check-label" for="flexCheckChecked">
-                                                  Media Recordings
-                                                </label>
-                                              </div>
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  Student Annotation
-                                                </label>
-                                              </div>
-                                              <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                  File Uploads
-                                                </label>
-                                              </div>
+                                        <div class="d-flex justify-content-center align-items-center" style="margin-right:65px">
+                                            <div class="col- px-3" style="margin-top: 30px;">
+                                                <label for="submission form-control" style="margin-bottom: 190px;">Submission</label>
+                                            </div>
+                                            <div class="col- w-50" style="margin-top: 30px;">
+                                                <div class="submission form-control" style="width: 400px">
+                                                    <div class="assignment dropdown">
+                                                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                          Online
+                                                        </button>
+                                                        <br/>
+                                                        <label for="entry options"  style="margin-top: 20px;">Online Entry Options</label>
+                                                        <br>
+                                                        <ul class="dropdown-menu" id="entry options">
+                                                          <li><a class="dropdown-item" href="#">Text Input</a></li>
+                                                          <li><a class="dropdown-item" href="#">File Upload</a></li>
+                                                          <li><a class="dropdown-item" href="#">Link</a></li>
+                                                        </ul>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Text Entry
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Website URL
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                        <label class="form-check-label" for="flexCheckChecked">
+                                                          Media Recordings
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          Student Annotation
+                                                        </label>
+                                                      </div>
+                                                      <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                        <label class="form-check-label" for="flexCheckDefault">
+                                                          File Uploads
+                                                        </label>
+                                                      </div>
+                                                </div>
+                                            </div>
                                         </div>
+                                        <div class="d-flex justify-content-center align-items-center">
+                                            <div class="col- px-3">
+                                                Assign
+                                            </div>
+                                            <div class="col- w-50" style="margin-top: 30px;">
+                                                <div class="submission form-control">
+                                                <label>Assign To</label>
+                                                <input class="form-control" value="Everyone"/>
+                                                <label style="margin-top: 20px;">Due</label>
+                                                <br/>
+                                                <input type="date" value="2023-09-18" min="2023-09-06" max="2024-09-28">
+                                                <div class="row" style="margin-top: 30px;">
+                                                    <div class="col">
+                                                        <label>Avaliable from</label>
+                                                        <br/>
+                                                        <input type="date" value="2023-09-06" min="2023-09-06" max="2023-09-28">
+                                                    </div>
+                                                    <div class="col">
+                                                        <label>Until</label>
+                                                        <br/>
+                                                        <input type="date" value="" min="2023-09-06" max="2023-09-28">
+                                                    </div>
+                                                    <button class="btn btn-gray" style="margin-top: 20px;"> <i class="fa-solid fa-plus"></i> Add </button>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                        
                                         <hr>
                                         <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
@@ -367,8 +404,8 @@
                                                 Notify users that this content has changed 
                                             </label>
                                             <div class="float-end">
-                                                <button class="btn btn-gray"> <a href="/Kanbas/Courses/Assignments" style="text-decoration:none; color:black">Cancel</a></button>
-                                                <button class="btn btn-danger"><a href="/Kanbas/Courses/Assignments" style="text-decoration:none; color:white">Save</a></button>
+                                                <a href="/Kanbas/Courses/Assignments" style="text-decoration:none;"> <button class="btn btn-gray">Cancel</button> </a>
+                                                <a href="/Kanbas/Courses/Assignments" style="text-decoration:none;"> <button class="btn btn-danger">Save</button> </a>
                                             </div>
                                           </div>
                                     </td>
