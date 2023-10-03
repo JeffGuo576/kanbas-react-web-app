@@ -111,7 +111,11 @@ ul.wd-profile-navigation .list-group-item.active a {
     padding: 0;
 }
 
-
+.btn-gray {
+    color: black;
+    background-color: lightgray;
+    border-color: lightgray;
+}
 
 .kanbas.container{
     padding: 0;

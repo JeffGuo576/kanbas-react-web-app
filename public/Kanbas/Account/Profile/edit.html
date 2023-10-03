@@ -5,10 +5,10 @@
     <link href ="index.css" rel = "stylesheet"/>
 </head>
 <body>
-    <div class ="row" style="height: 100%;">
+    <div class ="row">
         <div class="d-none d-md-block col-2 col-lg-2 col-xl-2" style="width:83px;">
             <div class="kanbas container">
-                <ul class = "wd-kanbas-navigation list-group" >
+                <ul class = "wd-kanbas-navigation list-group">
                     <li class = "list-group-item">
                         <a href="#" > <img src="/images/Northeasternlogo.png" class="logo"></a>
                     </li>
@@ -103,21 +103,65 @@
                     </ul>
                 </div>
                 <div class="col-sm-12 col-md-10 col-lg-10 col-xl-10 col-xxl-10" style="padding-left: 100px;">
-                    <a href="/Kanbas/Account/Profile/edit.html">
-                    <button class="profile-button"><i class="fa-solid fa-pencil fa-flip-horizontal"></i>
-                        Edit Profile</button>
-                    </a>
                     <i class="fa-solid fa-user fa-6x" style="color: grey" ></i>
-                    <h2>Jeffrey Guo</h2>
+                    <a href="/Kanbas/Account/Profile/index.html">
+                    <button class="profile-button"><i class="fa-solid fa-pencil fa-flip-horizontal"></i>
+                        Cancel Editing</button>
+                    </a>
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="mb-3">
+                                <label for="name" class="form-label" style="font-weight: bold;">Name *</label>
+                                <input type="text" class="form-control" id="name" value="Jeffrey Guo">
+                              </div>
+                              <div class="mb-3">
+                                <label for="pronouns" class="form-label" style="font-weight: bold;"> Pronouns</label>
+                                <br/>
+                                <select id="pronouns">
+                                    <option>None</option>
+                                    <option>he/him</option>
+                                    <option>she/her</option>
+                                    <option>they/them</option>
+                                </select>
+                                <br/>
+                                <br/>
+                                <label for="title" class="form-label" style="font-weight: bold;">Title *</label>
+                                <input type="text" class="form-control" id="title">
+                              </div>
+                        </div>
+                        <h3>Contact</h3>
+                        <p>No registered services, you can add some on the <a href="#" class="redlink">settings</a> page</p>
+                        <br/>
+                        <br/>
+                    </div>
+                      <div class="mb-3">
+                        <label for="bio" class="form-label"><h3>Biography</h3></label>
+                        <textarea class="form-control" id="bio" rows="3"> Student</textarea>
                     <br/>
-                    <br/>
-                    <h3>Contact</h3>
-                    <p>No registered services, you can add some on the <a href="#" class="redlink">settings</a> page</p>
-                    <h3>Biography</h3>
-                    <p>Student</p>
                     <h3>Links</h3>
-                    <i class="fa-solid fa-link" style="color: grey" ></i>
-                    <a href="https://www.youtube.com" class="redlink" >Youtube</a> 
+                      </div>
+                        <div class="links container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <label for="link-title" class="form-label" style="font-weight: bold;">Title</label>
+                                    <input type="text" class="form-control" id="link-title" value="Youtube">
+                                    <br/>
+                                    <button class="btn btn-gray">Add another link</button><br/>
+                                </div>
+                                <div class="col-md-1">
+                                    <p style="margin-top: 35px;">&#8594;</p>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="link-title" class="form-label" style="font-weight: bold;">URL</label>
+                                    <input type="text" class="form-control" id="link-title" value="www.youtube.com">
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <form action="/Kanbas/Account/Profile/edit.html">
+                        <button class="btn btn-gray">Cancel</button>
+                        <button class="btn btn-danger">Save Profile</button>
+                    </form>
                 </div>
             </div>
         </div>
