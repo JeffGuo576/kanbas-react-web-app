@@ -42,3 +42,28 @@
 .floatRight{
     float: right;
 }
+
+.floatLeft{
+    float: left;
+}
+
+.light-font{
+    font-weight:lighter;
+    font-size: 12px;
+    margin-left: 28px;
+}
+
+.lightgray-borderless{
+    background-color: lightgray;
+    border: none;
+}
+
+.rounded-pill {
+    border-radius: var(--bs-border-radius-pill)!important;
+    background-color: lightgray;
+}
+
+.edit{
+    border: none;
+    background-color: white;
+}

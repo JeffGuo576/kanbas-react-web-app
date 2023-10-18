@@ -33,12 +33,12 @@ function ModuleList() {
                     {modules.map((module, index) => (
                         <li className="modules-margin">
                             <li className="list-group-item active" key={index}>
-                                <h2>{module.name}</h2>
+                                {module.name}
                             </li>
-                            <li className="list-group-item">
-                                {module.description}
+                            <li className="list-group-item second">
                             <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
                             <FontAwesomeIcon color="green" icon={faCircleCheck} className="floatRight"></FontAwesomeIcon>
+                                {module.description}
                             </li>
                         </li>
                     ))}
