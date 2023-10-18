@@ -1,62 +1,68 @@
-ul.wd-kanbas-navigation.list-group{
+.wd-kanbas-navigation.list-group{
     border-radius: 0px;
     width: 83px;
-
+    height: 100%;
 }
 
-ul.wd-kanbas-navigation .list-group-item{
+.wd-kanbas-navigation .list-group-item{
     border: none;
     background-color: black;
     text-align: center;
     padding: 0;
     padding-top: 10px;
     padding-bottom: 10px;
+    height: 70px;
 }
 
-ul.wd-kanbas-navigation a{ 
+.wd-kanbas-navigation a{ 
     color: white;
     text-decoration: none;
 }
 
 
-ul.wd-kanbas-navigation .list-group-item.active{    
+.wd-kanbas-navigation .list-group-item.active{ 
+    color:red;
     background-color:white;
     border: none;
-    width: 84px;
+    border-left: 2px solid black;
 }
 
-ul.wd-kanbas-navigation .list-group-item.active a { 
+.wd-kanbas-navigation .list-group-item.active a { 
     color:black;
 }
 
 .logo {
-width:75px;
-height:75px;   
+width:50px;
+height:50px;   
 }
 
-ul.wd-course-navigation.list-group{
+.bigger-icon {
+    font-size: 45px;
+}
+  
+.wd-course-navigation.list-group{
     border-radius: 0px;  
     padding-left: 0px;
 }
 
-ul.wd-course-navigation .list-group-item{
+.wd-course-navigation .list-group-item{
     border: none;
     text-align: left;
 }
 
-ul.wd-course-navigation a{ 
+.wd-course-navigation a{ 
     color: red;
     text-decoration: none;
 }
 
-ul.wd-course-navigation .list-group-item.active{ 
+.wd-course-navigation .list-group-item.active{ 
     color:black;
     background-color:white;
     border: none;
     border-left: 2px solid black;
 }
 
-ul.wd-course-navigation .list-group-item.active a { 
+.wd-course-navigation .list-group-item.active a { 
     color:black;
     text-align: left;
     
@@ -82,26 +88,26 @@ ul.wd-course-navigation .list-group-item.active a {
 }
 
 
-.kanbas.container{
+.kanbas-container{
     padding: 0;
     background-color: black;
     width: 100px;
     height: 1400px;
 }
 
-ul.wd-week-list.list-group{
+.wd-week-list.list-group{
     margin-top: 30px;
     border-radius: 0px;  
 }
 
-ul.wd-week-list .list-group-item{
+.wd-week-list .list-group-item{
     border: .5px solid black;
     text-align: left;
     border-left: 3px solid green;
     font-weight: bold;
 }
 
-ul.wd-week-list .second.list-group-item{
+.wd-week-list .second.list-group-item{
     border: .5px solid black;
     text-align: left;
     border-left: 3px solid green;
@@ -110,12 +116,12 @@ ul.wd-week-list .second.list-group-item{
     font-size:15px
 }
 
-ul.wd-week-list a{ 
+.wd-week-list a{ 
     color: red;
     text-decoration: none;
 }
 
-ul.wd-week-list .list-group-item.active{ 
+.wd-week-list .list-group-item.active{ 
     color:black;
     background-color:lightgray;
     border: none;
@@ -143,62 +149,99 @@ ul.wd-week-list .list-group-item.active{
     height: 37px;
 }
 
-ul.wd-status.list-group{
+.wd-status.list-group{
     margin-top: 0px;
     border-radius: 0px;
 }
 
-ul.wd-status .list-group-item{
+.wd-status .list-group-item{
     background-color: lightgrey;
     border: 1px solid black;
     font-size: 15px;
 }
 
-ul.wd-status a{ 
+.wd-status a{ 
     color: black;
     text-decoration: none;
 }
 
-ul.coming .list-group{
+.coming .list-group{
     border-radius: 0px;
 }
 
-ul.coming .list-group-item{
+.coming .list-group-item{
     background-color: white;
     border: none;
     font-size: 15px;
 }
 
-ul.coming a{ 
+.coming a{ 
     color: red;
     text-decoration: none;
 }
 
-ul.kanbas a{
+.kanbas a{
     text-decoration: none;
     color: red;
 }
 
-ul.kanbas .dropdown-item.active{
+.kanbas .dropdown-item.active{
     text-decoration: none;
     background-color: white;
     color: black;
     text-align: right;
 }
 
-ul.course a{
+.course a{
     text-decoration: none;
     color: red;
 }
 
-ul.course .dropdown-item.active{
+.course .dropdown-item.active{
     text-decoration: none;
     background-color: white;
     color: black;
     text-align: right;
 }
 
-.moduleContainer{
-    padding-left: 0px;
+.card-title h5{
+    font-size:1px;
+    padding-left: 10px;
+}
+
+.card-padding{
+    padding: 5px;
+}
+
+.course{
+    border: none;
+    background-color: white;
+}
+
+.dashboard-container{
+    padding-left: 40px;
+    width: 100%;
+}
+
+.card-title {
+    font-size: 18px;
+}
+
+.module-container{
     padding-right: 30px;
+}
+
+.modules-margin{
+    margin-bottom: 30px;
+    list-style-type:none;
+}
+
+.breadcrumb-info{
+    color:red;
+    text-decoration: none;
+}
+
+.breadcrumb-title{
+    padding-left: 20px;
+    font-size: 30px;
 }

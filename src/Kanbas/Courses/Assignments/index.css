@@ -1,0 +1,44 @@
+.wd-week-list.list-group{
+    margin-top: 30px;
+    border-radius: 0px;  
+
+}
+
+.wd-week-list .list-group-item{
+    border: .5px solid black;
+    text-align: left;
+    border-left: 3px solid green;
+    font-weight: bold;
+}
+
+.wd-week-list .second.list-group-item{
+    border: .5px solid black;
+    text-align: left;
+    border-left: 3px solid green;
+    font-weight: bold;
+    padding-left: 40px;
+    font-size:15px
+}
+
+.wd-week-list a{ 
+    color: red;
+    text-decoration: none;
+}
+
+.wd-week-list .list-group-item.active{ 
+    color:black;
+    background-color:lightgray;
+    border: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.assignments-margin{
+    margin-bottom: 30px;
+    list-style-type:none;
+}
+
+.floatRight{
+    float: right;
+}

@@ -1,0 +1,39 @@
+[{
+        "_id": "123",
+        "name": "HTML Basics",
+        "description": "Create a basic HTML webpage with headings, paragraphs, and links.",
+        "course": "CS101"
+    },
+    {
+        "_id": "124",
+        "name": "CSS Styling",
+        "description": "Style the HTML webpage using CSS to make it visually appealing.",
+        "course": "CS101"
+    },
+    {
+        "_id": "CS101",
+        "name": "JavaScript Interactivity",
+        "description": "Add interactivity to the webpage using JavaScript, such as form validation.",
+        "course": "CS101"
+    },
+    {
+        "_id": "CS101",
+        "name": "HTML Basics",
+        "description": "Create a basic HTML webpage with headings, paragraphs, and links.",
+        "course": "CS101"
+    },
+    {
+        "_id": "CS101",
+        "name": "CSS Styling",
+        "description": "Style the HTML webpage using CSS to make it visually appealing.",
+        "course": "CS101"
+    },
+    {
+        "_id": "CS101",
+        "name": "JavaScript Interactivity",
+        "description": "Add interactivity to the webpage using JavaScript, such as form validation.",
+        "course": "CS101"
+    }
+
+
+]
