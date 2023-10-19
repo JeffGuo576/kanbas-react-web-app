@@ -12,9 +12,9 @@ function Grades() {
   return (
     <div>
       <div className="text-end">
-        <button className="btn btn-gray"><FontAwesomeIcon icon={faFileImport}> </FontAwesomeIcon>Import</button>
-        <button className="btn btn-gray"><FontAwesomeIcon icon={faFileExport}> </FontAwesomeIcon>Export</button>
-        <button className="btn btn-gray"><FontAwesomeIcon icon={faGear}> </FontAwesomeIcon></button>
+        <button className="btn-gray"><FontAwesomeIcon icon={faFileImport}> </FontAwesomeIcon>Import</button>
+        <button className="btn-gray"><FontAwesomeIcon icon={faFileExport}> </FontAwesomeIcon>Export</button>
+        <button className="btn-gray"><FontAwesomeIcon icon={faGear}> </FontAwesomeIcon></button>
     </div>
     <div className="row">
         <div className="col">
@@ -26,7 +26,7 @@ function Grades() {
             <input className="form-control" type="text" placeholder="Search Assignments"/>
         </div>
     </div>
-    <button className="btn btn-gray"><FontAwesomeIcon icon={faFilter}> </FontAwesomeIcon>Apply Filter</button>
+    <button className="btn-gray"><FontAwesomeIcon icon={faFilter}> </FontAwesomeIcon>Apply Filter</button>
 <div className="table-responsive">
         <table className="table table-striped table-bordered">
           <thead>

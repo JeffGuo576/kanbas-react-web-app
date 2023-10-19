@@ -1,4 +1,6 @@
 .btn-gray {
     color: black;
-    background-color: gray;
+    border-radius: 8px;
+    border:none;
+    margin: 5px;
 }
