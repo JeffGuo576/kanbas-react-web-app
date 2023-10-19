@@ -1,19 +1,19 @@
 [{
         "_id": "123",
         "name": "Week 0 - INTRO",
-        "description": "Create a basic HTML webpage with headings, paragraphs, and links.",
+        "description": "Learn how to create user interfaces with HTML",
         "course": "CS101"
     },
     {
         "_id": "124",
         "name": "Week 1 - INTRO",
-        "description": "Style the HTML webpage using CSS to make it visually appealing.",
+        "description": "Keep working on assignment 1",
         "course": "CS101"
     },
     {
         "_id": "125",
         "name": "Week 2 - INTRO",
-        "description": "Add interactivity to the webpage using JavaScript, such as form validation.",
+        "description": "Deploy the assignment to Netlify",
         "course": "CS101"
     },
     {

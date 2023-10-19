@@ -9,7 +9,9 @@ function KanbasNavigation() {
   const icons = [faN, faUser, faGauge, faBook, faCalendarDays, faInbox, faClock, faChalkboard, faArrowRightFromBracket, faCircleQuestion]
   const { pathname } = useLocation();
   return (
-    <div className="wd-kanbas-navigation list-group d-none d-md-block col-2 col-lg-2 col-xl-2">
+    <div className="d-none d-md-block col-2 col-lg-2 col-xl-2">
+    <div className="kanbas-container">
+    <div className="wd-kanbas-navigation list-group">
       {links.map((link, index) => (
         <Link
           key={index}
@@ -21,6 +23,8 @@ function KanbasNavigation() {
           {link}
         </Link>
       ))}
+    </div>
+    </div>
     </div>
   );
 }

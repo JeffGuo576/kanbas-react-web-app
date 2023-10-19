@@ -22,6 +22,8 @@ function Courses() {
   const course = db.courses.find((course) => course._id === courseId);
   const dropDownItems = [{faGauge},{faBook},{faCalendarDays},{faInbox},{faClock},{faVideo},{faArrowRightFromBracket},{faCircleQuestion}]
   const dropDownItemNames = ["Dashboard", "Account", "Courses", "Calendar", "Inbox", "Studio", "Commons", "Help"]
+  const currentLocation = "/Kanbas/Courses/" + courseId + "/";
+  const path = useLocation().pathname.toString().replace(currentLocation,"");
   return (
     <div>
       <table width="100%">
@@ -30,13 +32,13 @@ function Courses() {
             <td class="breadcrumb-title d-none d-xxl-table-cell d-xl-table-cell d-lg-table-cell d-md-none" colspan="3">
               <Breadcrumb separator={<ChevronRightIcon></ChevronRightIcon>}>
                 <BreadcrumbLink>
-                  <FontAwesomeIcon icon={faBars} color="#ee3a3a"> </FontAwesomeIcon>
+                  <FontAwesomeIcon icon={faBars} color="red"> </FontAwesomeIcon>
                 </BreadcrumbLink>
               <BreadcrumbItem>
                 <BreadcrumbLink class="breadcrumb-info" href="#">{course.number}.{course._id}</BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbItem isCurrentPage href="#">
-                  <BreadcrumbLink href="#">Home</BreadcrumbLink>
+                  <BreadcrumbLink href="#">{path}</BreadcrumbLink>
                 </BreadcrumbItem>
               </Breadcrumb>
             <hr/>
@@ -65,7 +67,7 @@ function Courses() {
                 <Route path="Modules" element={<Modules/>}></Route>
                 <Route path="Assignments" element={<Assignments/>}></Route>
                 <Route path="Assignments/:assignmentId" element={<AssignmentEditor/>}></Route>
-                <Route path="Grades" element={<h1>Grades</h1>}></Route>
+                <Route path="Grades" element={<Grades/>}></Route>
               </Routes>
             </td>
           </tr>

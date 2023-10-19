@@ -24,7 +24,6 @@
     color:red;
     background-color:white;
     border: none;
-    border-left: 2px solid black;
 }
 
 .wd-kanbas-navigation .list-group-item.active a { 
@@ -91,8 +90,8 @@ height:50px;
 .kanbas-container{
     padding: 0;
     background-color: black;
-    width: 100px;
-    height: 1400px;
+    width: 83px;
+    height: 1000px;
 }
 
 .wd-week-list.list-group{

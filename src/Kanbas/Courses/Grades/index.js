@@ -1,20 +1,38 @@
 import db from "../../Database";
 import { useParams } from "react-router-dom";
+import { faGear, faFileImport, faFileExport, faFilter } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./index"
 
 function Grades() {
   const { courseId } = useParams();
   const assignments = db.assignments.filter((assignment) => assignment.course === courseId);
   const enrollments = db.enrollments.filter((enrollment) => enrollment.course === courseId);
+
   return (
     <div>
-      <h1>Grades</h1>
-      <div className="table-responsive">
-        <table className="table">
+      <div className="text-end">
+        <button className="btn btn-secondary"><FontAwesomeIcon icon={faFileImport}> </FontAwesomeIcon>Import</button>
+        <button className="btn btn-secondary"><FontAwesomeIcon icon={faFileExport}> </FontAwesomeIcon>Export</button>
+        <button className="btn btn-secondary"><FontAwesomeIcon icon={faGear}> </FontAwesomeIcon></button>
+    </div>
+    <div className="row">
+        <div className="col">
+            <h3>Student Names</h3>
+            <input className="form-control" type="text" placeholder="Search Students" title="Type the username of students for filter"/>
+        </div>
+        <div className="col">
+            <h3>Assignment Names</h3>
+            <input className="form-control" type="text" placeholder="Search Assignments"/>
+        </div>
+    </div>
+    <button className="btn btn-secondary"><FontAwesomeIcon icon={faFilter}> </FontAwesomeIcon>Apply Filter</button>
+<div className="table-responsive">
+        <table className="table table-striped table-bordered">
           <thead>
             <th>Student Name</th>
-            {assignments.map((assignment) => (<th>{assignment.title}</th>))}
+            {assignments.map((assignment) => (<th>{assignment.assignment}</th>))}
           </thead>
-
 
           <tbody>
             {enrollments.map((enrollment) => {
