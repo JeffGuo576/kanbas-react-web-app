@@ -1,6 +1,6 @@
 import db from "../../Database";
 import { useParams } from "react-router";
-import { faEllipsisV, faCircleCheck, faPlus} from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisV, faSquareCheck, faPlus,faAngleDown, faCircleCheck} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Dropdown from 'react-bootstrap/Dropdown';
 import "../../index.css"
@@ -39,11 +39,21 @@ function ModuleList() {
                                 {module.name}
                                 <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
                                 <FontAwesomeIcon color="gray" icon={faPlus} className="floatRight"></FontAwesomeIcon>
-                                <FontAwesomeIcon color="green" icon={faCircleCheck} className="floatRight"></FontAwesomeIcon>
+                                <FontAwesomeIcon color="gray" icon={faAngleDown} className="floatRight"></FontAwesomeIcon>
+                                <FontAwesomeIcon color="green" icon={faSquareCheck} className="floatRight"></FontAwesomeIcon>
                             </li>
-                            <li className="list-group-item second">
-                                {module.description}
+                            <li className="list-group-item">
+                                <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
+                                <FontAwesomeIcon color="green" icon={faSquareCheck} className="floatRight"></FontAwesomeIcon>
+                                {module.title}
                             </li>
+                            {module.description.map((mod, index) => (
+                                <li className="list-group-item second">
+                                    <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
+                                    <FontAwesomeIcon color="green" icon={faSquareCheck} className="floatRight"></FontAwesomeIcon>
+                                    {mod}
+                                </li>
+                            ))}
                         </li>
                     ))}
                 </ul>

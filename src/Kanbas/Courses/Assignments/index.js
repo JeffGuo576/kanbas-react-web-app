@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
-import { faEllipsisV, faCircleCheck, faPlus, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisV, faCircleCheck, faPlus, faPenToSquare, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css"
 
@@ -56,10 +56,8 @@ function Assignments() {
                   <button className="edit"><FontAwesomeIcon color="green" icon={faPenToSquare} className="floatLeft"></FontAwesomeIcon></button>  
                   {assignment.assignment}
                   </div>
-                  <div className="float-end">
-                  <FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon>
-                  <FontAwesomeIcon color="green" icon={faCircleCheck}></FontAwesomeIcon>
-                  </div>
+                  <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
+                  <FontAwesomeIcon color="green" icon={faSquareCheck} className="floatRight"></FontAwesomeIcon>
                   <br/>
                   <div className="light-font">
                   {assignment.dueDate}
@@ -86,10 +84,8 @@ function Assignments() {
                   <button className="edit"><FontAwesomeIcon color="green" icon={faPenToSquare} className="floatLeft"></FontAwesomeIcon></button>  
                   {assignment.assignment}
                   </div>
-                  <div className="float-end">
-                  <FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon>
-                  <FontAwesomeIcon color="green" icon={faCircleCheck}></FontAwesomeIcon>
-                  </div>
+                  <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
+                  <FontAwesomeIcon color="green" icon={faSquareCheck} className="floatRight"></FontAwesomeIcon>
                   <br/>
                   <div className="light-font">
                   {assignment.dueDate}
@@ -117,10 +113,8 @@ function Assignments() {
                   <button className="edit"><FontAwesomeIcon color="green" icon={faPenToSquare} className="floatLeft"></FontAwesomeIcon></button>  
                   {assignment.assignment}
                   </div>
-                  <div className="float-end">
-                  <FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon>
-                  <FontAwesomeIcon color="green" icon={faCircleCheck}></FontAwesomeIcon>
-                  </div>
+                  <FontAwesomeIcon color="gray" icon={faEllipsisV} className="floatRight"></FontAwesomeIcon>
+                  <FontAwesomeIcon color="green" icon={faSquareCheck} className="floatRight"></FontAwesomeIcon>
                   <br/>
                   <div className="light-font">
                   {assignment.dueDate}

@@ -1,77 +1,69 @@
 [{
         "_id": "123",
         "name": "Week 0 - INTRO",
-        "description": "Learn how to create user interfaces with HTML",
+        "title": "LEARNING OBJECTIVES",
+        "description": ["Introduction to the course", "Learn what is Web Development", "Creating a development environment",
+    "Creating a Web Application", "Getting Started with the first assignment"],
         "course": "CS101"
     },
     {
-        "_id": "124",
+        "_id": "123",
         "name": "Week 1 - INTRO",
-        "description": "Keep working on assignment 1",
+        "title": "LEARNING OBJECTIVES",
+        "description": ["Learn how to create user interfaces with HTML", "Keep working on assignment 1", "Deploy the assignment to netlify"],
         "course": "CS101"
     },
-    {
-        "_id": "125",
-        "name": "Week 2 - INTRO",
-        "description": "Deploy the assignment to Netlify",
-        "course": "CS101"
-    },
+
     {
         "_id": "123",
-        "name": "Week 0 - INTRO to Software Engineer",
-        "description": "Gain a grasp of what Software Engineer is",
-        "course": "CS102"
-    },
-    {
-        "_id": "124",
-        "name": "Week 1 - Typescript",
-        "description": "Gain a grasp of what Typescript is",
-        "course": "CS102"
-    },
-    {
-        "_id": "125",
-        "name": "Week 2 - React",
-        "description": "Gain a grasp of what React is",
+        "name": "Week 0 - Orientation & Requiremets",
+        "title": "Course Introduction",
+        "description": ["Syllabus", "Review on previous OOD principles", "Introduction to the course"],
         "course": "CS102"
     },
 
     {
         "_id": "123",
-        "name": "Week 0 - Intro to Databases",
-        "description": "What is a database?",
-        "course": "CS103"
+        "name": "Week 1 - From Requirements to Code",
+        "title": "LEARNING OBJECTIVES",
+        "description": ["Learning Typescript", "Learning how to test your code", "Submit your code on autograder"],
+        "course": "CS102"
     },
+
     {
-        "_id": "124",
-        "name": "Week 1 - Intro to Database charts",
-        "description": "How to make a database chart.",
-        "course": "CS103"
-    },
-    {
-        "_id": "125",
-        "name": "Week 2 - SQL",
-        "description": "Learn how to use SQL",
+        "_id": "123",
+        "name": "Week 0 - Orientation & Requirements",
+        "title": "Course Introduction",
+        "description": ["Syllabus", "Introduction to the course"],
         "course": "CS103"
     },
 
     {
         "_id": "123",
-        "name": "Week 0 - INTRO TO OBJECT ORIENTED DESIGN",
-        "description": "Gain a grasp of what Object Oriented Design is",
+        "name": "Week 1 - From Requirements to Code",
+        "title": "LEARNING OBJECTIVES",
+        "description": ["Introduction to Database Charts", "Introduction to SQL", "How to connect your Database"],
+        "course": "CS103"
+    },
+
+
+    {
+        "_id": "123",
+        "name": "Week 0 - Orientation & Requirements",
+        "title": "Course Introduction",
+        "description": ["Syllabus", "Introduction to the course", "Introduction to OOD Principles"],
         "course": "CS104"
     },
+
     {
-        "_id": "124",
-        "name": "Week 1 - ENCAPSULATION",
-        "description": "Gain a grasp of what ENCAPSULATION is",
-        "course": "CS104"
-    },
-    {
-        "_id": "125",
-        "name": "Week 2 - POLYMORPHISM",
-        "description": "Gain a grasp of what POLYMORPHISM is",
+        "_id": "123",
+        "name": "Week 1 - From Requirements to Code",
+        "title": "LEARNING OBJECTIVES",
+        "description": ["Inheritance", "Polymorphism", "Encapsulation"],
         "course": "CS104"
     }
+
+    
 
 
 ]

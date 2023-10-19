@@ -23,6 +23,8 @@ function AssignmentEditor() {
       <input className="form-control" defaultValue={assignment.assignment} />
       <div className="text-end">
       <hr/>
+      <textarea className="form-control" placeholder="Assignment Description"></textarea>
+      <br/>
       <Link
         className="btn btn-light"
         to={`/Kanbas/Courses/${courseId}/Assignments`}
