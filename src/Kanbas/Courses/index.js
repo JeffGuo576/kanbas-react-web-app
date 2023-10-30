@@ -17,9 +17,9 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGauge, faBook, faCalendarDays, faInbox, faClock, faVideo, faArrowRightFromBracket, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
 
-function Courses() {
+function Courses( {courses} ) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const dropDownItems = [{faGauge},{faBook},{faCalendarDays},{faInbox},{faClock},{faVideo},{faArrowRightFromBracket},{faCircleQuestion}]
   const dropDownItemNames = ["Dashboard", "Account", "Courses", "Calendar", "Inbox", "Studio", "Commons", "Help"]
   const currentLocation = "/Kanbas/Courses/" + courseId + "/";
