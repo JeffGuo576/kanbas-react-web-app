@@ -1,5 +1,4 @@
-import { React, useState } from "react";
-import db from "../Database";
+import { React } from "react";
 import '../index.css';
 
 
@@ -22,19 +21,19 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
                   <p className="card-text">
                     {course._id} Fall 2023 Semester Full Term
                     <br />
-                    <button className="btn btn-warning"
-                      onClick={(event) => {
-                        event.preventDefault();
-                        setCourse(course);
-                      }}>
-                      Edit
-                    </button>
-                    <button className="btn btn-danger"
+                    <button className="btn btn-danger floatRight"
                       onClick={(event) => {
                         event.preventDefault();
                         deleteCourse(course._id);
                       }}>
                       Delete
+                    </button>
+                    <button className="btn btn-warning floatRight"
+                      onClick={(event) => {
+                        event.preventDefault();
+                        setCourse(course);
+                      }}>
+                      Edit
                     </button>
                   </p>
                 </div>
@@ -55,10 +54,10 @@ function Dashboard({ courses, course, setCourse, addNewCourse,
         <label for="courseEnd"><b>Course End Date</b></label>
         <input value={course.endDate} className="form-control" type="date" id ="courseEnd"
               onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
-        <button className="btn btn-success" onClick={addNewCourse} >
+        <button className="btn btn-success floatRight" onClick={addNewCourse} >
           Add
         </button>
-        <button className="btn btn-primary" onClick={updateCourse} >
+        <button className="btn btn-primary floatRight" onClick={updateCourse} >
         Update
         </button>  
         </div>

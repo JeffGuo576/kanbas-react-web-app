@@ -44,7 +44,10 @@ function Assignments() {
                 Assignment
                 <div className="float-end">
                     <button className="rounded-pill">40% of Total</button>
-                    <FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon>
+                    <Link key={new Date().getTime().toString()}
+                    to={`/Kanbas/Courses/${courseId}/Assignments/ ${new Date().getTime().toString()}`}>
+                    <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon></button>
+                    </Link>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon></button>
                 </div>
               </li>
@@ -72,7 +75,7 @@ function Assignments() {
                 Quizzes
                 <div className="float-end">
                     <button className="rounded-pill">10% of Total</button>
-                    <FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon>
+                    <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon></button>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon></button>
                 </div>
               </li>
@@ -101,7 +104,7 @@ function Assignments() {
                 Exam
                 <div className="float-end">
                     <button className="rounded-pill">10% of Total</button>
-                    <FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon>
+                    <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon></button>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon></button>
                 </div>
               </li>

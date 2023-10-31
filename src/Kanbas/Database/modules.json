@@ -1,20 +1,20 @@
 [{
         "_id": "123",
-        "name": "Introduction to HTML",
+        "name": "Intro to HTML",
         "title": "LEARNING OBJECTIVES",
         "description": "Stepping stone into the world of web development, where you'll learn the fundamental language for structuring and creating content on the web, equipping you with the essentials to kickstart your journey as a web developer.",
         "course": "CS101"
     },
     {
         "_id": "124",
-        "name": "Introduction to CSS",
+        "name": "Intro to CSS",
         "title": "LEARNING OBJECTIVES",
         "description": "Introduction to CSS is your gateway to the art of web design and styling. Dive into the world of cascading style sheets and learn how to transform plain HTML into visually appealing and responsive web pages.",
         "course": "CS101"
     },
     {
         "_id": "125",
-        "name": "Introduction to the course",
+        "name": "Intro to the course",
         "title": "Course Introduction",
         "description": "Introduction to Course: Intro to Software Engineering is the starting point on your journey to becoming a proficient software engineer. Explore the foundational concepts, tools, and methodologies that will empower you to create and innovate with software.",
         "course": "CS102"
@@ -22,7 +22,7 @@
 
     {
         "_id": "123",
-        "name": "Review on previous OOD principles",
+        "name": "Review OOD principles",
         "title": "LEARNING OBJECTIVES",
         "description": "Review previous OOD concepts is a refresher course designed to strengthen your understanding of Object-Oriented Design principles and techniques. Dive back into the core concepts of OOD, ensuring you have a solid foundation for more advanced software engineering endeavors.",
         "course": "CS102"
@@ -30,7 +30,7 @@
 
     {
         "_id": "126",
-        "name": "Introduction to the course",
+        "name": "Intro to the course",
         "title": "Course Introduction",
         "description": "Database is your gateway to the world of data management and storage. Explore the fundamental principles and technologies that underpin the efficient and secure handling of data, a vital skill for modern applications and businesses.",
         "course": "CS103"
@@ -38,7 +38,7 @@
 
     {
         "_id": "127",
-        "name": "Introduction to SQL",
+        "name": "Intro to SQL",
         "title": "LEARNING OBJECTIVES",
         "description": "Introduction to SQL is your first step into the world of structured query language, the backbone of database management. Learn how to interact with and manipulate data in relational databases, a fundamental skill for anyone involved in data analysis, software development, or database administration.",
         "course": "CS103"
@@ -47,7 +47,7 @@
 
     {
         "_id": "128",
-        "name": "Introduction to the course",
+        "name": "Intro to the course",
         "title": "Course Introduction",
         "description": "Object Oriented Design is your entry point into the realm of software architecture and design patterns. Gain a strong foundation in creating efficient, scalable, and maintainable software systems through the principles and practices of Object-Oriented Design.",
         "course": "CS104"
