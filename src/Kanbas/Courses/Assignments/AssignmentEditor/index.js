@@ -5,8 +5,6 @@ import { useParams, useNavigate } from "react-router-dom";
 import { faCircleCheck, faEllipsisV } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css"
-import { setAssignment } from "../assignmentReducer";
-import { useSelector, useDispatch } from "react-redux";
 
 function AssignmentEditor() {
   const { assignmentId, courseId } = useParams();

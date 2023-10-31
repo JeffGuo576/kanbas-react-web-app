@@ -4,7 +4,7 @@ import db from "../../Database";
 
 const initialState = {
     assignments: db.assignments,
-    assignment: { assignment: "New Assignment 123", title:"Assignment"},
+    assignment: { assignment: "New Assignment 123", title:"Assignment", point:100},
   };
   
   
@@ -26,15 +26,15 @@ const initialState = {
 
       //Update Assignment
       updateAssignment: (state, action) => {
-        state.modules = state.modules.map((module) => {
-          if (module._id === action.payload._id) {
+        state.assignments = state.assignments.map((assignment) => {
+          if (assignment._id === action.payload._id) {
             return action.payload;
           } else {
             return module;
           }
         });
       },
-      selectAssignment: (state, action) => {
+      setAssignment: (state, action) => {
         state.assignment = action.payload;
       },
     },

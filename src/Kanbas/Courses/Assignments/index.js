@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import db from "../../Database";
-import { faEllipsisV, faCircleCheck, faPlus, faPenToSquare, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import { faEllipsisV, faPlus, faPenToSquare, faSquareCheck } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./index.css"
 
@@ -75,7 +75,10 @@ function Assignments() {
                 Quizzes
                 <div className="float-end">
                     <button className="rounded-pill">10% of Total</button>
+                    <Link key={new Date().getTime().toString()}
+                    to={`/Kanbas/Courses/${courseId}/Assignments/ ${new Date().getTime().toString()}`}>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon></button>
+                    </Link>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon></button>
                 </div>
               </li>
@@ -104,7 +107,10 @@ function Assignments() {
                 Exam
                 <div className="float-end">
                     <button className="rounded-pill">10% of Total</button>
+                    <Link key={new Date().getTime().toString()}
+                    to={`/Kanbas/Courses/${courseId}/Assignments/ ${new Date().getTime().toString()}`}>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faPlus}></FontAwesomeIcon></button>
+                    </Link>
                     <button className="lightgray-borderless"><FontAwesomeIcon color="gray" icon={faEllipsisV}></FontAwesomeIcon></button>
                 </div>
               </li>
