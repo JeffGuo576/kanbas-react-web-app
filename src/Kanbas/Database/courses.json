@@ -1,6 +1,8 @@
 [
     { "_id": "CS101",
-      "name": "Web Development", "number": "CS4550", "startDate": "2023-01-10",
+      "name": "Web Development",
+      "number": "CS4550",
+      "startDate": "2023-01-10",
       "endDate": "2023-05-15"
     },
     { "_id": "CS102",

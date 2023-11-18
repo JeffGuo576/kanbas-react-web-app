@@ -16,10 +16,26 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGauge, faBook, faCalendarDays, faInbox, faClock, faVideo, faArrowRightFromBracket, faCircleQuestion } from "@fortawesome/free-solid-svg-icons";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
 function Courses( {courses} ) {
   const { courseId } = useParams();
-  const course = courses.find((course) => course._id === courseId);
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
+
+  const [course, setCourse] = useState({});
+
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
+
   const dropDownItems = [{faGauge},{faBook},{faCalendarDays},{faInbox},{faClock},{faVideo},{faArrowRightFromBracket},{faCircleQuestion}]
   const dropDownItemNames = ["Dashboard", "Account", "Courses", "Calendar", "Inbox", "Studio", "Commons", "Help"]
   const currentLocation = "/Kanbas/Courses/" + courseId + "/";
